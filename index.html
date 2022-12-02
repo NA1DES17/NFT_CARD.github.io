@@ -18,24 +18,15 @@
 		/>
 		<link rel="stylesheet" href="style.css" />
 		<title>Frontend Mentor | NFT preview card component</title>
-
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<!--   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
 	</head>
 	<body>
 		<div id="carta">
-			<img src="./images/image-equilibrium.jpg" alt="" />
+			<div class="img-container">
+				<img id="foto" src="./images/image-equilibrium.jpg" alt="" />
+			</div>
 
 			<h2>Equilibrium #3429</h2>
 			<h3>Our Equilibrium collection promotes balance and calm.</h3>
-			<!-- 			<div id="ethleft">
-				<p id="cantidad">0.041 ETH</p>
-
-				<p id="left">3 days left</p>
-			</div>  -->
 			<div id="ethleft">
 				<div id="eth">
 					<img src="./images/icon-ethereum.svg" alt="ETH" />
@@ -49,7 +40,9 @@
 			<footer>
 				<div id="img"><img src="./images/image-avatar.png" alt="" /></div>
 				<div id="a">Creation of</div>
-				<div id="b">Jules Wyvern</div>
+				<div id="b">
+					<a href="#" target="_blank" rel="noopener noreferrer">Jules Wyvern</a>
+				</div>
 			</footer>
 		</div>
 	</body>

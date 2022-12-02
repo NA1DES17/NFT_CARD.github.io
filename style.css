@@ -18,12 +18,38 @@ body {
 	height: 545px;
 	border-radius: 10px;
 }
-img {
+#foto {
 	width: 277px;
 	height: 277px;
-	border-radius: 10px;
+	border-radius: 12px;
 	margin: 25px;
 }
+.img-container {
+	position: relative;
+}
+.img-container::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	background: hsl(178, 100%, 50%) url(./images/icon-view.svg) no-repeat center;
+	width: 277px;
+	height: 277px;
+	transition: all 0.5s ease-in;
+	opacity: 0;
+	margin-top: 25px;
+	margin-left: 25px;
+
+	border-radius: 12px;
+	cursor: pointer;
+}
+.img-container:hover::before {
+	opacity: 0.6;
+}
+
 h2 {
 	font-size: 18px;
 	margin-left: 25px;
@@ -31,6 +57,10 @@ h2 {
 	margin-bottom: 25px;
 	color: hsl(0, 0%, 100%);
 	/* 	border: solid green; */
+}
+h2:hover {
+	color: hsl(178, 100%, 50%);
+	cursor: pointer;
 }
 h3 {
 	font-size: 13px;
@@ -106,8 +136,15 @@ footer {
 	margin-top: 10px;
 }
 #b {
-	color: hsl(0, 0%, 100%);
 	margin-top: 10px;
+	text-decoration: none;
+}
+#b a {
+	text-decoration: none;
+	color: hsl(0, 0%, 100%);
+}
+#b a:hover {
+	color: hsl(178, 100%, 50%);
 }
 #img img {
 	width: 20px;
